@@ -1,6 +1,6 @@
-import './App.css'
-import React from 'react'
+import './App.css';
 
+import ListaAlunos from './components/repeticao/ListaAlunos';
 import Primeiro from './components/basicos/Primeiro';
 import ComParametro from './components/basicos/ComParametro';
 import Fragmento from './components/basicos/Fragmento';
@@ -18,6 +18,13 @@ export default () =>
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card
+                titulo="#06 - Repetição"
+                firstColor="#b224ef"
+                secoundColor="#7579ff"
+            >
+                <ListaAlunos />
+            </Card>
             <Card
                 titulo="#05 - Componentes com Filhos"
                 firstColor="#f9d423"
