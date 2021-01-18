@@ -7,6 +7,7 @@ import Fragmento from './components/basicos/Fragmento';
 import Aleatorio from './components/basicos/Aleatorio';
 import Card from './components/layout/Card';
 import Familia from './components/basicos/Familia';
+import FamiliaMembro from './components/basicos/FamiliaMembro';
 
 
 
@@ -22,7 +23,11 @@ export default () =>
                 firstColor="#f9d423"
                 secoundColor="#38f9d7"
             >
-                <Familia sobreNome='Rodrigues' />
+                <Familia sobreNome='Rodrigues'>
+                    <FamiliaMembro nome='Edilson' />
+                    <FamiliaMembro nome='Leticia' />
+                    <FamiliaMembro nome='Moisés' />
+                </Familia>
             </Card>
             <Card
                 titulo="#04 - Desafio Aleatório"
