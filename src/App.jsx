@@ -16,15 +16,27 @@ export default () =>
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
-            <Card titulo="#04 - Desafio Aleatório">
+            <Card
+                titulo="#04 - Desafio Aleatório"
+                firstColor="#fa709a"
+                secoundColor="#fee140"
+            >
                 <Aleatorio min={0} max={60} />
             </Card>
 
-            <Card titulo="#03 - Fragmento">
+            <Card
+                titulo="#03 - Fragmento"
+                firstColor="#43e97b"
+                secoundColor="#38f9d7"
+            >
                 <Fragmento />
             </Card>
 
-            <Card titulo="#02 - Com Parâmetro">
+            <Card
+                titulo="#02 - Com Parâmetro"
+                firstColor="#accbee"
+                secoundColor="#e7f0fd"
+            >
                 <ComParametro
                     titulo="Situação do Aluno"
                     aluno="Pedro"
