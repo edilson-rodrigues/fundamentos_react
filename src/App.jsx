@@ -1,5 +1,6 @@
 import './App.css';
 
+import UsuarioInfo from './components/condicional/UsuarioInfo'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import ListaAlunos from './components/repeticao/ListaAlunos';
@@ -28,6 +29,8 @@ export default () =>
                 secoundColor="#1D8FE1"
             >
                 <ParOuImpar numero={20} />
+                <UsuarioInfo usuario={{ nome: 'Edilson' }} />
+                <UsuarioInfo usuario={{ email: 'edarodrigs@gmail.com' }} />
             </Card>
             <Card
                 titulo="#07 - Desafio Repetição"
