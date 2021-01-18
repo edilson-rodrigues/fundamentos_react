@@ -1,0 +1,14 @@
+table {
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #454545;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-image: linear-gradient(#FFFEFF 0%, #D7FFFE 100%);
+}

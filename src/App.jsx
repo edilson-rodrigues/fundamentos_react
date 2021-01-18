@@ -1,5 +1,6 @@
 import './App.css';
 
+import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import Primeiro from './components/basicos/Primeiro';
 import ComParametro from './components/basicos/ComParametro';
@@ -18,6 +19,13 @@ export default () =>
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card
+                titulo="#07 - Desafio Repetição"
+                firstColor="#B6CEE8"
+                secoundColor="#F578DC"
+            >
+                <TabelaProdutos />
+            </Card>
             <Card
                 titulo="#06 - Repetição"
                 firstColor="#b224ef"
