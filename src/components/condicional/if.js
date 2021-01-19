@@ -1,6 +1,4 @@
-import React from 'react';
-
-export default props => {
+const If = (props) => {
 
     const elseChild = props.children.filter(child => {
         return child.type && child.type.name === 'Else'
@@ -21,5 +19,5 @@ export default props => {
         return false;
     }
 }
-
+export default If;
 export const Else = props => props.children;
