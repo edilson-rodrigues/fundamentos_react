@@ -1,24 +1,18 @@
-function gerarNumeroNaoContido(min, max, array) {
+function megaSena() {
+    let numeros = [];
 
-    const aleatorio = parseInt(Math.random() * (max + 1 - min)) + min;
+    const numero = parseInt(Math.random() * (60 - 1)) + 1;
 
-    return array.includes(aleatorio) ?
-        gerarNumeroNaoContido(min, max, array) :
-        aleatorio;
+    for (let x = 0; x < 6; x++) {
+
+        const sorteado = numeros.includes(numero) ?
+            parseInt(Math.random() * (60 - 1)) + 1 :
+            numero
+
+        numeros.push(sorteado);
+    }
+
+    return numeros.sort((a, b) => a - b);
 }
 
-function sorteado(qtde) {
-
-    const numeros = Array(qtde)
-        .fill(0)
-        .reduce((nums) => {
-            const novoNumero = gerarNumeroNaoContido(1, 60, nums);
-            return [...nums, novoNumero]
-        }, [])
-        .sort((a, b) => a - b)
-        ;
-
-    return numeros;
-}
-
-console.log(sorteado(6))
+console.log(megaSena())
