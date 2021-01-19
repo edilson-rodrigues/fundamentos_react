@@ -1,22 +1,23 @@
+import React, { useState } from "react";
 import IndiretaFilho from "./IndiretaFilho";
 
 const DiretaPai = (_) => {
-	let _nome = "?";
-	let _idade = 0;
-	let _nerd = false;
+	const [nome, setNome] = useState("?");
+	const [idade, setIdade] = useState(0);
+	const [nerd, setNerd] = useState(false);
 
 	function getInfo(nome, idade, nerd) {
-		_nome = nome;
-		_idade = idade;
-		_nerd = nerd;
+		setNome(nome);
+		setIdade(idade);
+		setNerd(nerd);
 	}
 
 	return (
 		<div>
 			<div>
-				<div>{_nome}</div>
-				<div>{_idade}</div>
-				<div>{_nerd ? "Verdadeiro" : "Falso"}</div>
+				<div>Nome: {nome}</div>
+				<div>Idade: {idade}</div>
+				<div>Nerd: {nerd ? "Sim" : "Não"}</div>
 			</div>
 			<IndiretaFilho getIndiretaFilho={getInfo} />
 		</div>
