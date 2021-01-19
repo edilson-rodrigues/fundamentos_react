@@ -1,0 +1,21 @@
+.Mega {
+    font-size: 1.4rem;
+}
+
+.numeros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.circulo {
+    display: block;
+    border-radius: 50%;
+    width: 1.4em;
+    height: 1.4em;
+    margin: 4px;
+    padding: 10px;
+    text-align: center;
+    float: left;
+    background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%);
+}
