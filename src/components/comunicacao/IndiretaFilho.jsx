@@ -8,7 +8,7 @@ const DiretaFilho = (props) => {
 			<button
 				onClick={(_) => getIndiretaFilho("Edilson", gerarIdade(), gerarNed())}
 			>
-				Forncer Informações
+				Fornecer Informações
 			</button>
 		</div>
 	);
